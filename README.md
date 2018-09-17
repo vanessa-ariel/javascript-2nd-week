@@ -1,4 +1,4 @@
-# JAVASCRIPT 2 - 17/09/18
+# CLASS NOTES - JAVASCRIPT 2 - 17/09/18
 
 ## Document Object Model (DOM)
 
