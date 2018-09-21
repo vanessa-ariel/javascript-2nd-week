@@ -17,6 +17,14 @@ buttonMenu.addEventListener("click", function(){
     }
 })
 
+    console.log (sidebar.classList)
+    if (sidebar.classList.contains("sidebar-menu__visible")){
+        sidebar.classList.remove("sidebar-menu__visible");
+        sidebar.classList.add("sidebar-menu__hidden");
+    }else{
+        sidebar.classList.remove("sidebar-menu__hidden");
+        sidebar.classList.add("sidebar-menu__visible");
+    }
 
 // const button = document.querySelector(".sidebar-menu__button");
 // const sidebarMenu = document.querySelector(".sidebar-menu");
