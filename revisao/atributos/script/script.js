@@ -1,34 +1,24 @@
-// const button = document.querySelector("button");
-// const paragraph = document.querySelector(".paragraph")
+const button = document.querySelector("button"); //WHAT ABOUT GET ELEMENTS BY NAME
+const link = document.getElementById("externo");
+const divArticle = document.querySelector(".article");
 
-// button.addEventListener("click",function(event){
-//   event.preventDefault();
-//     const pChildren = paragraph.children[0];
-//     const attribute = pChildren.attributes
-//     //console.log(attribute[0].name , attribute[0].value);
+button.addEventListener("click", function(event){
+	event.preventDefault();
+//	console.log(link.attributes)//ATTRIBUTES PROPERTY
+	
+//	console.log(link.attributes.length)
+	
+	for(let i=0; i<link.attributes.length; i++){
+		let newParagraph = document.createElement("p");
+		//console.log(link.attributes[i].name)
+		newParagraph.innerHTML = (`${link.attributes[i].name}:${link.attributes[i].value}`);
+		//console.log(link.attributes[i].value);
+		
+		divArticle.appendChild(newParagraph);
+	}
+})
 
-//     for(i=0; i< attribute.length; i++){
-//       const list = (attribute[i].name, attribute[i].value);
-//       const newDiv = document.createElement("div")
-//       newDiv.innerHTML = (list)
-//       newDiv.appendChild(list);
-//     }
-//   })
 
 
-  const button = document.querySelector("button");
-  const attribute = document.getElementById("externo");
-  const newParagraph = document.createElement("p");
-  const textAttribute = document.querySelector(".");
 
-  button.addEventListener("click",function(event){
-    event.preventDefault();
-
-    for(i=0; i< attribute.length; i++){
-      const list =(attribute[i].name, attribute[i].value);
-      newParagraph.innerHTML = list
-      newParagraph.appendChild(list);
-    }
-  })
-
-  
+ 
