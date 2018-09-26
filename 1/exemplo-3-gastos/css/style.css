@@ -63,3 +63,14 @@ body {
     color: #ECDDF3;
     transition: 0.3s;
 }
+
+.extrato__table{
+    width: 100%;
+    text-align: left;
+}
+
+.extrato__header th{
+    border-bottom: 1px solid #ECDDF3;
+    padding: 10px 0;
+}
+
