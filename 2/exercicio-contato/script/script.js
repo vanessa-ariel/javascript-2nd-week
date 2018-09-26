@@ -27,8 +27,6 @@ button.addEventListener("click", function(event){ // click is an event type
         inputMessage.focus();
         return false;
     }
-    alert("Deu certo!")
+    alert("It worked!")
     return true;
-
-
 })
